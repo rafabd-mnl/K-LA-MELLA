@@ -1,1 +1,360 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>K la Mella | Restaurant</title>
 
+https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap
+
+<style>
+
+:root{
+    --principal:#7b2d26;
+    --secundario:#d9b382;
+    --claro:#f8f4ef;
+    --oscuro:#222;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:var(--claro);
+    color:#333;
+}
+
+header{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:5rem;
+    font-family:'Playfair Display',serif;
+}
+
+.hero p{
+    font-size:1.3rem;
+    margin:20px 0;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    background:var(--secundario);
+    color:#222;
+    text-decoration:none;
+    border-radius:40px;
+    font-weight:600;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:white;
+    padding:15px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    z-index:999;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+}
+
+section{
+    padding:90px 10%;
+}
+
+.titulo{
+    text-align:center;
+    font-family:'Playfair Display',serif;
+    font-size:2.5rem;
+    color:var(--principal);
+    margin-bottom:50px;
+}
+
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.card h3{
+    color:var(--principal);
+    margin-bottom:15px;
+}
+
+.item{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:10px;
+    border-bottom:1px solid #eee;
+    padding-bottom:8px;
+}
+
+.precio{
+    color:var(--principal);
+    font-weight:bold;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:20px;
+}
+
+.contacto{
+    text-align:center;
+    background:white;
+}
+
+.contacto p{
+    margin:15px 0;
+    font-size:1.1rem;
+}
+
+footer{
+    background:var(--principal);
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#25D366;
+    color:white;
+    font-size:30px;
+    width:60px;
+    height:60px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    border-radius:50%;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:3rem;
+}
+
+.about{
+    grid-template-columns:1fr;
+}
+
+nav ul{
+    display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>K la Mella</h2>
+
+    <ul>
+        <li>#nosaltresNosaltres</a></li>
+        <li>#cartaCarta</a></li>
+        <li>#contacteContacte</a></li>
+    </ul>
+</nav>
+
+<header>
+    <div class="hero">
+        <h1>K la Mella</h1>
+        <p>Bon menjar, bon ambient i moments per recordar.</p>
+        #cartaVeure Carta</a>
+    </div>
+</header>
+
+<section id="nosaltres">
+
+<h2 class="titulo">Benvinguts a K la Mella</h2>
+
+<div class="about">
+
+https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1200&q=80
+
+<div>
+<h3>Cuina amb personalitat</h3>
+
+<p>
+A K la Mella combinem producte de qualitat, receptes casolanes
+i una experiència gastronòmica pensada per compartir.
+</p>
+
+<br>
+
+<p>
+Des de les nostres Braves la Mella fins a les hamburgueses
+Black Angus estil smash, cada plat està elaborat per sorprendre.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="carta">
+
+<h2 class="titulo">La Nostra Carta</h2>
+
+<div class="menu-grid">
+
+<div class="card">
+
+<h3>Entrants</h3>
+
+<div class="item"><span>Pa amb tomaca i allioli</span><span class="precio">3,5€</span></div>
+<div class="item"><span>Ensaladilla russa</span><span class="precio">5€</span></div>
+<div class="item"><span>Tàrtar de salmó</span><span class="precio">12€</span></div>
+<div class="item"><span>Braves la Mella</span><span class="precio">7€</span></div>
+<div class="item"><span>Calamar a l'andalusa</span><span class="precio">8€</span></div>
+<div class="item"><span>Polp amb parmentier</span><span class="precio">16€</span></div>
+
+</div>
+
+<div class="card">
+
+<h3>Entrepans</h3>
+
+<div class="item"><span>La Mella</span><span class="precio">7€</span></div>
+<div class="item"><span>Merito</span><span class="precio">8€</span></div>
+<div class="item"><span>Angelet</span><span class="precio">7€</span></div>
+<div class="item"><span>Spirit</span><span class="precio">7€</span></div>
+<div class="item"><span>El Carreter</span><span class="precio">8€</span></div>
+<div class="item"><span>Bar de Baix</span><span class="precio">8€</span></div>
+
+</div>
+
+<div class="card">
+
+<h3>Hamburgueses</h3>
+
+<div class="item"><span>Trufeta</span><span class="precio">12€</span></div>
+<div class="item"><span>Bosquimana</span><span class="precio">12€</span></div>
+<div class="item"><span>Judes Vegana</span><span class="precio">10€</span></div>
+
+</div>
+
+<div class="card">
+
+<h3>Plats Principals</h3>
+
+<div class="item"><span>Entrecot de vaca vella</span><span class="precio">18€</span></div>
+<div class="item"><span>Rellom amb rocafort</span><span class="precio">12€</span></div>
+<div class="item"><span>Cachopo</span><span class="precio">12€</span></div>
+<div class="item"><span>Sèpia</span><span class="precio">16€</span></div>
+<div class="item"><span>Chipirons</span><span class="precio">14€</span></div>
+
+</div>
+
+<div class="card">
+
+<h3>Postres</h3>
+
+<div class="item"><span>Torta de formatge</span><span class="precio">5€</span></div>
+<div class="item"><span>Torta de xocolate</span><span class="precio">5€</span></div>
+<div class="item"><span>Flam de cafè</span><span class="precio">4,5€</span></div>
+<div class="item"><span>Tiramisú de pistatxo</span><span class="precio">6€</span></div>
+
+</div>
+
+<div class="card">
+
+<h3>Begudes</h3>
+
+<div class="item"><span>Canya</span><span class="precio">1,3€</span></div>
+<div class="item"><span>Doble</span><span class="precio">1,5€</span></div>
+<div class="item"><span>Pitxer</span><span class="precio">6,5€</span></div>
+<div class="item"><span>Sangria</span><span class="precio">8€</span></div>
+<div class="item"><span>Vins de la casa</span><span class="precio">5€</span></div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contacte" class="contacto">
+
+<h2 class="titulo">Contacte</h2>
+
+<p>📍 Afegeix ací la direcció del restaurant</p>
+
+<p>📞 Afegeix ací el telèfon</p>
+
+<p>✉️ info@klamella.com</p>
+
+<p>🕐 Reserva la teua taula per WhatsApp o telèfon</p>
+
+</section>
+
+<footer>
+
+<h3>K la Mella</h3>
+
+<p>Restaurant · Entrepans · Hamburgueses · Producte de qualitat</p>
+
+<p>© 2026 K la Mella</p>
+
+</footer>
+
+https://wa.me/34600000000
+📱
+</a>
+
+</body>
+</html>
